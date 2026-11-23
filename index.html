@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giacomo Grazia</title>
+  <meta name="description" content="Giacomo Grazia, MSc Artificial Intelligence student at the University of Amsterdam, working on medical image segmentation and LLM fairness and privacy.">
+  <meta property="og:title" content="Giacomo Grazia">
+  <meta property="og:description" content="MSc AI student at the University of Amsterdam. Medical image segmentation, LLM fairness and privacy.">
+  <meta property="og:image" content="https://giacomograzia.github.io/assets/photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #fbfaf8;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --muted: #5f6368;
+      --line: #e6e3de;
+      --accent: #0b5cad;
+      --accent-soft: #e8f0fa;
+      --wip: #8a5a00;
+      --wip-soft: #fbf1dc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121314;
+        --surface: #1a1b1d;
+        --text: #ececec;
+        --muted: #a0a4a8;
+        --line: #2c2e31;
+        --accent: #7cb3ff;
+        --accent-soft: #1b2a3d;
+        --wip: #f0c36b;
+        --wip-soft: #33291a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+
+    header { display: flex; gap: 28px; align-items: center; margin-bottom: 44px; }
+    header img {
+      width: 132px; height: 132px; border-radius: 50%;
+      object-fit: cover; flex-shrink: 0; border: 1px solid var(--line);
+    }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 2.3rem; line-height: 1.15; margin: 0 0 6px; font-weight: 600;
+    }
+    .tagline { color: var(--muted); margin: 0 0 14px; }
+    .links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--surface); color: var(--text); font-size: .9rem;
+    }
+    .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .links svg { width: 15px; height: 15px; fill: currentColor; }
+
+    section { margin-top: 40px; }
+    h2 {
+      font-size: .78rem; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--muted); font-weight: 600; margin: 0 0 14px;
+      padding-bottom: 8px; border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0 0 12px; }
+
+    .item { margin-bottom: 22px; }
+    .item:last-child { margin-bottom: 0; }
+    .item h3 { font-size: 1rem; font-weight: 600; margin: 0 0 2px; line-height: 1.45; }
+    .meta { color: var(--muted); font-size: .9rem; margin: 0 0 4px; }
+    .venue { font-style: italic; }
+    .item p { font-size: .95rem; margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .tag {
+      font-size: .78rem; padding: 2px 9px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent); font-weight: 500;
+    }
+    .tag.wip { background: var(--wip-soft); color: var(--wip); }
+    .item-links { font-size: .9rem; margin-top: 6px; }
+    .item-links a + a::before { content: "·"; color: var(--muted); margin: 0 8px; }
+
+    .row { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
+    .row .when { color: var(--muted); font-size: .88rem; white-space: nowrap; }
+
+    .skills { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; font-size: .95rem; }
+    .skills dt { color: var(--muted); }
+    .skills dd { margin: 0; }
+
+    footer {
+      margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line);
+      color: var(--muted); font-size: .85rem;
+    }
+
+    @media (max-width: 560px) {
+      .wrap { padding: 36px 16px 32px; }
+      header { flex-direction: column; align-items: flex-start; gap: 18px; }
+      header img { width: 104px; height: 104px; }
+      h1 { font-size: 1.9rem; }
+      .row { flex-direction: column; gap: 0; }
+      .skills { grid-template-columns: 1fr; gap: 2px; }
+      .skills dd { margin-bottom: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="assets/photo.jpg" alt="Portrait of Giacomo Grazia" width="132" height="132">
+      <div>
+        <h1>Giacomo Grazia</h1>
+        <p class="tagline">MSc Artificial Intelligence · University of Amsterdam</p>
+        <nav class="links" aria-label="Contact">
+          <a href="mailto:giacomo.grazia@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.4 7H19.6L12 12.2zM4 8.6V17h16V8.6l-8 5.5-8-5.5z"/></svg>
+            Email
+          </a>
+          <a href="https://github.com/giacomograzia">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/giacomo-grazia-602348181">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section aria-labelledby="about">
+      <h2 id="about">About</h2>
+      <p>I'm an MSc student in Artificial Intelligence at the University of Amsterdam, with a BSc in Data
+        Science from TU Eindhoven and Tilburg University. My work so far spans <strong>medical image
+        segmentation</strong> and <strong>fairness and privacy in large language models</strong>.</p>
+      <p>I like rigorous empirical research: reproducing methods carefully, evaluating them systematically
+        on large datasets, and being honest about what the numbers show. I run most of my experiments on
+        the Snellius HPC cluster and a self-managed remote server.</p>
+    </section>
+
+    <section aria-labelledby="publications">
+      <h2 id="publications">Publications</h2>
+
+      <div class="item">
+        <h3>Mixture of Experts for Fine-Grained Shape Refinement in Medical Segmentation</h3>
+        <p class="meta"><span class="venue">MICCAI Shape in Medical Imaging Workshop</span>, 2026</p>
+        <p>A mixture-of-experts refiner for small pelvic-fracture fragments in X-rays, evaluated on 26,000+
+          fragments. It reduces boundary error by over 65% versus a strong baseline.</p>
+        <div class="item-links"><a href="https://openreview.net/forum?id=64REK28ZDA">Paper</a></div>
+      </div>
+
+      <div class="item">
+        <h3>Reproducing “The Tug of War Within: Mitigating the Fairness–Privacy Conflicts in Large Language Models”</h3>
+        <p class="meta"><span class="venue">Transactions on Machine Learning Research</span> (TMLR), 2026</p>
+        <p>Reproduces and extends SPIN across three instruction-tuned 7B LLMs: up to 6.1 percentage points
+          better fairness–privacy trade-offs with at most a 0.6-point drop in general capability, plus new
+          experiments on malicious data, limited data and safety–helpfulness conflicts.</p>
+        <div class="item-links">
+          <a href="https://openreview.net/forum?id=7nKvpj17oI">Paper</a><a href="https://github.com/giacomograzia/reproducing-SPIN">Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="projects">
+      <h2 id="projects">Projects</h2>
+
+      <div class="item">
+        <h3><a href="https://github.com/giacomograzia/BEP_CITaDOG">Information extraction from Dutch administrative decisions</a></h3>
+        <p class="meta">BSc thesis · CITaDOG project, Tilburg University</p>
+        <p>Extracting recipients, dates, legal references and legal effects from decisions by the Dutch
+          competition authority (ACM), comparing rule-based, NER and LLM approaches. Up to 97% on key
+          information and 90% on legal-outcome identification.</p>
+        <div class="tags"><span class="tag">NLP</span><span class="tag">LLMs</span><span class="tag">spaCy</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://github.com/giacomograzia/nlp2-public">Brain predictivity of sentence embeddings</a></h3>
+        <p class="meta">Coursework · University of Amsterdam</p>
+        <p>Voxel-wise fMRI encoding models comparing how well Qwen3-4B and its embedding-tuned variant
+          predict brain activity, with layer-wise and variance-partitioning analyses.</p>
+        <div class="tags"><span class="tag">fMRI</span><span class="tag">LLMs</span><span class="tag">SLURM</span></div>
+      </div>
+
+      <div class="item">
+        <h3>Sentiment classification on the Stanford Sentiment Treebank</h3>
+        <p class="meta">Coursework · University of Amsterdam</p>
+        <p>Six architectures from bag-of-words to Tree-LSTMs on 5-class SST, isolating the effects of word
+          order, sentence length and node-level supervision. Best: node-supervised Tree-LSTM at 48.4%.</p>
+        <div class="tags"><span class="tag">PyTorch</span><span class="tag">NLP</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://github.com/giacomograzia/generative-ai-music">Learned drum decoration for group-fitness music</a></h3>
+        <p class="meta">Coursework · University of Amsterdam</p>
+        <p>An LSTM trained on human drumming adds decoration to a fixed kick/snare skeleton, compared with
+          hand-written rules: steady for the body, alive for the ear.</p>
+        <div class="tags"><span class="tag">Generative AI</span><span class="tag">LSTM</span></div>
+      </div>
+
+      <div class="item">
+        <h3><a href="https://github.com/giacomograzia/gestione-cassa">Gestione Cassa</a></h3>
+        <p class="meta">Side project</p>
+        <p>A web-based point-of-sale for a volunteer-run festival: tills, kitchen monitors, thermal
+          printing and stock tracking, all served from one machine on the local network.</p>
+        <div class="tags"><span class="tag wip">Work in progress</span><span class="tag">TypeScript</span><span class="tag">SQLite</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="item">
+        <div class="row"><h3>MSc Artificial Intelligence, University of Amsterdam</h3><span class="when">2025 – present</span></div>
+      </div>
+      <div class="item">
+        <div class="row"><h3>Exchange semester, University of Technology Sydney</h3><span class="when">2025</span></div>
+      </div>
+      <div class="item">
+        <div class="row"><h3>Joint BSc Data Science, TU Eindhoven &amp; Tilburg University</h3><span class="when">2022 – 2025</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <dl class="skills">
+        <dt>ML &amp; data</dt><dd>Python, PyTorch, scikit-learn, pandas, spaCy, Hugging Face, SQL, R</dd>
+        <dt>Infrastructure</dt><dd>Linux, SLURM (Snellius HPC), SSH, Tailscale, Git, LaTeX</dd>
+        <dt>Languages</dt><dd>Italian, English, French; a bit of German and Dutch</dd>
+      </dl>
+    </section>
+
+    <footer>© 2026 Giacomo Grazia · Amsterdam</footer>
+  </div>
+</body>
+</html>
